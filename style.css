@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -9,6 +8,9 @@ body {
 
 html,
 body {
+  border-width: 4px;
+    border-style: solid;
+    border-color: black;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -19,7 +21,10 @@ body {
   border-left-style: black;
 }
 
-.cabecalho{
+.cabecalho {
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
     text-align: center;
     padding: 0.4rem;
     color: #fdfdfd;
@@ -29,19 +34,22 @@ body {
 }
 
 .wrapper {
-  width: 480px;
+  width: 380px;
   margin: 50px auto;
 }
 
 
-.notifications__item {
+.container {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 105px;
-  margin-bottom: 20px;
-  padding: 0 20px;
+  height: 106px;
+  margin-bottom: 10px;
+  padding: 0 10px;
 
   background-color: white;
   border-radius: 5px;
@@ -51,73 +59,42 @@ body {
   cursor: pointer;
 }
 
-.notifications__item__avatar {
+.imagem {
   width: 75px;
   height: 75px;
   overflow: hidden;
   margin-right: 20px;
-
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
-.notifications__item__avatar img {
-  width: 100%;
-  height: 100%;
+.imagem img {
+  width: 90%;
+  height: 90%;
 }
 
-.notifications__item__content { width: calc( 100% - 105px ); }
-.notifications__item__title,
-.notifications__item__message { display: block; }
+.lista { width: calc( 100% - 100px ); }
+.Titulo,
+.Descricao { display: block; }
 
-.notifications__item__title {
-  letter-spacing: 2px;
+.Titulo {
+  letter-spacing: 1px;
+
   font-family: 'atvice', sans-serif;
-  font-size: 17px;
+  font-size: 20px;
 }
 
-.notifications__item__message {
+.Descricao {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   color: #929292;
 }
 
-.notifications__item__option {
-  width: 20px;
-  height: 20px;
-  margin: 8px 0;
-
-  border-radius: 50%;
-  color: white;
-  opacity: 0;
-
-  font-size: 10px;
-  text-align: center;
-  line-height: 20px;
-
-  cursor: pointer;
-  transition: all .2s;
-}
-
-/*
-* Animation part
-*/
-.notifications__item:hover {
+.container:hover {
   background-color: #f7f7f7;
   transform: scale( 0.95 );
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.notifications__item.archive {
-  background-color: #3dc98c;
-  animation: archiveAnimation 1.5s cubic-bezier(0, 0, 0, 1.12) forwards;
-  animation-delay: .6s;
-}
-
-.notifications__item.delete {
-  background-color: #c93d4d;
-  animation: deleteAnimation 1.5s cubic-bezier(0, 0, 0, 1.12) forwards;
-  animation-delay: .6s;
-}
 .rodapé a {
     text-decoration: none;
     color: #000;
@@ -125,7 +102,19 @@ body {
 }
 
 .rodapé {
+    height: 60px;
+    background-color: #f7f7f7;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
     text-align: center;
     font-family: Verdana,Geneva,Tahoma,sans-serif;
 }
 
+div{
+  vertical-align: top;
+}
+
+img{
+  vertical-align: top;
+}
