@@ -12,16 +12,18 @@ body {
   height: 100%;
   overflow: hidden;
   background-color: #85FFBD;
+  border-color: rgb(85, 59, 59);
   background: linear-gradient(to bottom, #000000 0%, #86b7e7 100%);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: black;
   border-left-style: black;
+  border: 2px solid rgb(194, 50, 50)
 }
 
 .cabecalho {
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
-    border-color: rgb(10, 10, 10);
+    border-color: rgb(194, 50, 50);
     text-align: center;
     padding: 0.4rem;
     color: #fdfdfd;
@@ -39,7 +41,7 @@ body {
 .container {
   border-width: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: rgb(85, 59, 59);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +49,7 @@ body {
   height: 106px;
   margin-bottom: 10px;
   padding: 0 10px;
-
+  border: 2px solid rgb(194, 50, 50);
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -69,7 +71,8 @@ body {
   height: 100%;
 }
 
-.lista { width: calc( 100% - 100px ); }
+.lista { width: calc( 100% - 100px ); 
+  text-decoration:none; }
 .Titulo,
 .Descricao { display: block; }
 
@@ -92,27 +95,30 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.rodapé a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: 800;
-}
-
 .rodapé {
-    height: 60px;
-    background-color: rgb(0, 0, 0);
-    border-width: 0.1px;
-    border-style: solid;
-    border-color: black;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    border-color: rgb(71, 43, 43);
     text-align: center;
-    color: #ffffff;
+    color: #fdfdfd;
     font-family: Verdana,Geneva,Tahoma,sans-serif;
+    background: rgb(10, 10, 10);
+    border: 2px solid rgb(194, 50, 50);
 }
 
-div{
-  vertical-align: top;
+.tela2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #aaaaaa;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-img{
-  vertical-align: top;
+.tela2 img{
+  max-width:500px;
+  max-height:200px;
+  width: auto;
+  height: auto;
 }
